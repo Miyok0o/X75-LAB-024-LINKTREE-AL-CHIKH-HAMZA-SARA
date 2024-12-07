@@ -6,6 +6,8 @@
 	--cyan-fonce: #2c5364;
 	--gris-argente: #c0c0c0;
 	--gris-bleute: #a5b2c0;
+	--or-metalique: #d4af37;
+	--peche-pastel:#ffb347;
 	--taille-titre: 3rem;
 	--taille-sous-titre: 1.3rem;
 	--taille-texte: 2.3rem;
@@ -36,7 +38,7 @@ body {
 	background-size: cover;
 	font-family: Arial, Helvetica, sans-serif;
 	overflow: hidden;
-	position: relative;
+	/* position: relative; */
 	height: 100vh;
 }
 
@@ -262,7 +264,115 @@ body::after {
 	font-family: "Exo 2", sans-serif;
 }
 
+/* PAGE DES REVES */
 
+.nuages__container__nuage{
+	position: absolute;
+	width: 7rem;
+    height: 3rem;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50px;
+    animation: drift 10s ease-in-out infinite;
+}
+
+@keyframes drift {
+    0%, 100% {
+    transform: translate(0, 0);
+    }
+    50% {
+    transform: translate(30px, 10px);
+    }
+}
+
+.nuages__container__nuage::before,
+.nuages__container__nuage::after {
+    content: '';
+    position: absolute;
+    width: 5rem;
+    height: 3rem;
+    background: #ffffff;
+    border-radius: 50px;
+}
+
+.nuages__container__nuage::before {
+    top: -20px;
+    left: 15px;
+}
+
+.nuages__container__nuage::after {
+    top: 10px;
+    left: 60px;
+}
+
+.titre__neon__titre{
+	font-size: var(--taille-texte);
+	font-family: none;
+	text-transform: uppercase;
+    font-weight: 700;
+	background-image: linear-gradient(to right, #8d8686, #a18f52);
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+    letter-spacing: 4px;
+	margin-top: 5.5rem;
+	text-shadow: 
+    0 0 10px var(--or-metalique), 
+    0 0 30px var(--or-metalique),
+    0 0 20px var(--or-metalique),
+    0 0 40px var(--peche-pastel),
+    0 0 60px var(--peche-pastel),
+    0 0 70px var(--peche-pastel);
+	animation : flicker 1s infinite alternate;
+}
+
+@keyframes flicker {
+    0% { opacity: 1; }
+    50% { opacity: 0.8; }
+    100% { opacity: 1; }
+}
+
+.boutons__reve{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 80vw;
+	margin: 2rem auto;
+	gap: 1rem;
+}
+
+.boutons__reve__container{
+	width: 15rem;
+	height: 15rem;
+	background-color: burlywood;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA */
 /* mobile S */
 @media (max-width: 375px) {
 	/* page qui je suis  */
