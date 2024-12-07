@@ -262,7 +262,10 @@ body::after {
 	font-family: "Exo 2", sans-serif;
 }
 
+
+/* mobile S */
 @media (max-width: 375px) {
+	/* page qui je suis  */
     .carte__cercle{
         width: 8.5rem;
         height: 8.5rem;
@@ -283,6 +286,7 @@ body::after {
 
 /* laptop 1024px */
 @media (min-width: 1024px) {
+	/* page accueil */
 	* {
 		font-size: 100%;
 	}
@@ -295,6 +299,7 @@ body::after {
 		height: 4.5rem;
 	}
 
+	/* page qui je suis */
     .carte__main{
         width: 50vw;
     }
