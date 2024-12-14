@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>Mes rêves</title>
 		<link rel="stylesheet" href="../style.css" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Orbitron&family=Exo+2:wght@300;400;500&display=swap"
@@ -14,11 +14,12 @@
 		<header>
 			<!-- BARRE DE NAVIGUATION -->
 			<nav class="navbar">
-				<a class="navbar__item" href="#">Accueil</a>
-				<a class="navbar__item" href="#"> FAQ</a>
-				<a class="navbar__item" href="#">Contact</a>
+				<a class="navbar__item" href="../">Accueil</a>
+				<a class="navbar__item" href="/FAQ.html"> FAQ</a>
+				<a class="navbar__item" href="/contact.html">Contact</a>
 			</nav>
 		</header>
+
 		<!-- NUAGES ANIMATION -->
 		<main class="reves__main">
 			<div class="nuages__container">
@@ -44,26 +45,29 @@
 			<!-- CARTES/BOUTONS -->
 			<section class="boutons__reve">
 				<!-- Bouton 1 -->
-				<div class="boutons__reve__container">
-					<input type="checkbox" id="button1" class="expand-checkbox" />
-					<label for="button1" class="expand-button">
-						<div class="boutons__reve__container__cercle1"></div>
-					</label>
-					<div class="bouton__reve__container__texte" id="text1">
+				<div class="container-reves">
+					<div class="boutons__reve__container">
+						<input type="checkbox" id="button1" class="expand-checkbox" />
+						<label for="button1" class="expand-button">
+							<div class="boutons__reve__container__cercle1"></div>
+						</label>
+					</div>
+					<div class="boutons__reve__container">
+						<input type="checkbox" id="button2" class="expand-checkbox" />
+						<label for="button2" class="expand-button">
+							<div class="boutons__reve__container__cercle2"></div>
+						</label>
+					</div>
+				</div>
+				<!-- Bouton 2 -->
+				<div class="boutons__reve__container-texte">
+					<div class="boutons__reve__container-texte__texte" id="text1">
 						Explorer le Japon ou la Corée du Sud, où la sérénité des
 						paysages et l&apos;énergie apaisante des rues m&apos;invitent
 						à m&apos;évader, avec l&apos;espoir, peut-être, de m&apos;y
 						installer un jour...
 					</div>
-				</div>
-
-				<!-- Bouton 2 -->
-				<div class="boutons__reve__container">
-					<input type="checkbox" id="button2" class="expand-checkbox" />
-					<label for="button2" class="expand-button">
-						<div class="boutons__reve__container__cercle2"></div>
-					</label>
-					<div class="boutons__reve__container__texte" id="text2">
+					<div class="boutons__reve__container-texte__texte" id="text2">
 						J&apos;aimerais ouvrir un café cosy et chill. C&apos;est une
 						idée qui m&apos;est venue en grande partie grâce aux animés,
 						et pourquoi pas la réaliser un jour au Japon ou en Corée.
