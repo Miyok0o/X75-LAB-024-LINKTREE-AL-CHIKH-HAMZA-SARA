@@ -340,18 +340,9 @@ body::after {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-direction: column;
 	width: 80vw;
 	margin: 9rem auto;
 	gap: 1.5rem;
-}
-
-.container-reves{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 1.5rem;
-	margin-bottom: 1rem;
 }
 
 .boutons__reve__container {
@@ -401,8 +392,8 @@ body::after {
 	display: none;
 }
 
-.boutons__reve__container-texte__texte {
-	/* display: none; */
+.boutons__reve__container__texte {
+	display: none;
 	background-color: burlywood;
 	padding: 1rem;
 	margin: 7rem 1rem auto;
@@ -416,7 +407,7 @@ body::after {
 	transition: transform 0.3s ease, display 0.3s ease;
 }
 
-.expand-checkbox:checked + .expand-button + .boutons__reve__container-texte__texte {
+.expand-checkbox:checked + .expand-button + .boutons__reve__container__texte {
 	display: block; /* Affiche le texte quand la checkbox est sélectionnée */
 	transform: scale(1.1);
 }
