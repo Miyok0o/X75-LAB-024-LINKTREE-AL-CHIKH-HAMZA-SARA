@@ -338,79 +338,79 @@ body::after {
 /* Boutons/cartes */
 .boutons__reve {
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
 	align-items: center;
 	width: 80vw;
-	margin: 9rem auto;
+	margin: 7rem auto; 
 	gap: 1.5rem;
 }
 
 .boutons__reve__container {
-	width: 13rem;
-	height: 13rem;
+	width: 25rem; /* Élargi un peu, en mode FAQ */
 	background-color: burlywood;
-	border-radius: 13%;
-	box-shadow: 0 15px 50px rgba(0, 0, 0.5);
+	border-radius: 1rem;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 	cursor: pointer;
+	padding: 0.5rem;
+	position: relative; /* Utile si tu veux peaufiner l'affichage */
 	transition: transform 0.3s ease;
 }
 
 .boutons__reve__container:hover {
-	transform: scale(1.1);
+	transform: scale(1.02);
 }
 
+/* Les cercles/images */
 .boutons__reve__container__cercle1 {
-	background-image: url(https://images.unsplash.com/photo-1484189282192-2d8dea38b614?q=80&w=1031&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+	background-image: url("https://images.unsplash.com/photo-1484189282192-2d8dea38b614?q=80&w=1031&auto=format&fit=crop");
 }
 
 .boutons__reve__container__cercle2 {
-	background-image: url(https://img.freepik.com/premium-photo/anime-coffee-shop-illustration_641503-330832.jpg);
+	background-image: url("https://img.freepik.com/premium-photo/anime-coffee-shop-illustration_641503-330832.jpg");
 }
 
 .boutons__reve__container__cercle1,
 .boutons__reve__container__cercle2 {
-	width: 9rem;
-	height: 9rem;
+	width: 8rem;
+	height: 8rem;
 	border-radius: 50%;
 	background-size: cover;
 	background-position: center;
-	margin: 1.7rem auto;
+	margin: 0.5rem auto;
 	animation: flip 3s;
 }
 
 @keyframes flip {
-	0%,
-	100% {
-		transform: rotateY(0);
-	}
-	50% {
-		transform: rotateY(180deg);
-	}
+	0%, 100% { transform: rotateY(0); }
+	50%      { transform: rotateY(180deg); }
 }
 
+/* La checkbox reste planquée */
 .expand-checkbox {
 	display: none;
 }
 
+/* Texte caché par défaut */
 .boutons__reve__container__texte {
 	display: none;
 	background-color: burlywood;
+	/* border-radius: 10px; */
+	/* text-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); */
 	padding: 1rem;
-	margin: 7rem 1rem auto;
-	border-radius: 10px;
-	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-	width: 25rem;
-	height: 10rem;
-	text-align: center;
+	margin-top: 0.5rem;
 	font-family: "Exo 2", sans-serif;
-	font-size: 17px;
-	transition: transform 0.3s ease, display 0.3s ease;
+	font-size: 13px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 1.4em;
+	letter-spacing: 0.1rem;
 }
 
+/* Quand la checkbox est cochée => affichage du texte */
 .expand-checkbox:checked + .expand-button + .boutons__reve__container__texte {
-	display: block; /* Affiche le texte quand la checkbox est sélectionnée */
-	transform: scale(1.1);
+	display: block;
 }
+
 
 /* PAGE DES PASSIONS ET LOISIRS */
 
