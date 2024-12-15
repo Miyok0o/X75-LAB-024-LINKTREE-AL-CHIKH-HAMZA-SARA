@@ -1,5 +1,6 @@
 /* définition des variables */
 :root {
+	/* Couleur */
 	--mauve-principale: #8e2de299;
 	--mauve-secondaire: #4a00e066;
 	--mauve-tertiaire: #c084fc;
@@ -8,10 +9,12 @@
 	--gris-bleute: #a5b2c0;
 	--or-metalique: #d4af37;
 	--peche-pastel: #ffb347;
+
+	/* Taille */
 	--taille-titre: 3rem;
 	--taille-sous-titre: 1.3rem;
-	--taille-texte: 2.3rem;
 	--taille-contenu: 1.8rem;
+	--taille-texte: 2.3rem;
 }
 
 /* début de réinitialisation du css */
@@ -33,9 +36,9 @@ a {
 }
 /* fin de réinitialisation */
 
-/* fond */
+/* Fond étoilé */
 body {
-	background: linear-gradient(to bottom, #000428, #004e92);
+	background: linear-gradient(to bottom, #000428, #004e92); 
 	background-size: cover;
 	font-family: Arial, Helvetica, sans-serif;
 	overflow: hidden;
@@ -63,16 +66,16 @@ body::after {
 	}
 }
 
-/* PAGES D'ACCUEIL */
+/* PAGE D'ACCUEIL */
 
-/* barre de naviguation */
+/* Barre de naviguation */
 .navbar {
-	color: var(--gris-argente);
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	gap: 3rem;
 	padding: 1rem;
+	color: var(--gris-argente);
 	font-size: var(--taille-texte);
 }
 
@@ -103,8 +106,8 @@ body::after {
 	border-radius: 50%;
 	border: 0.2rem solid white;
 	cursor: pointer;
-	transition: transform 0.3s ease-in-out;
 	animation: flip 3s;
+	transition: transform 0.3s ease-in-out;
 }
 
 .photo-profil__img:hover {
@@ -135,9 +138,9 @@ body::after {
 
 .titre__container__titre-principale {
 	font-size: var(--taille-titre);
-	color: var(--mauve-tertiaire);
 	font-family: "Orbitron", sans-serif;
 	letter-spacing: 0.2rem;
+	color: var(--mauve-tertiaire);
 	text-shadow: 0 0 10px var(--mauve-principale),
 		0 0 20px var(--mauve-principale), 0 0 30px var(--mauve-principale),
 		0 0 40px var(--mauve-secondaire), 0 0 50px var(--mauve-secondaire),
@@ -158,28 +161,28 @@ body::after {
 }
 
 /* Sous-titre */
-.titre__container__sous-titre p {
-	color: var(--gris-bleute);
+.titre__container__sous-titre  {
 	font-size: var(--taille-sous-titre);
 	font-family: "Exo 2", sans-serif;
+	color: var(--gris-bleute);
+	margin: 0px 0.5rem;
 }
 
 /* Boutons */
 .boutons__container {
-	color: var(--gris-argente);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	margin-top: 2rem;
 	font-size: var(--taille-contenu);
+	font-family: "Exo 2", sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 0.2rem;
-	font-family: "Exo 2", sans-serif;
+	color: var(--gris-argente);
 }
 
 .boutons__container__bouton {
-	background: var(--cyan-fonce);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -188,6 +191,7 @@ body::after {
 	height: 5rem;
 	border-radius: 50px;
 	border: 0.1rem solid var(--gris-argente);
+	background: var(--cyan-fonce);
 	box-shadow: 6px 6px 15px var(--mauve-secondaire),
 		-6px -6px 15px var(--mauve-principale);
 	cursor: pointer;
@@ -227,13 +231,13 @@ body::after {
 /* PAGE QUI SUIS JE   */
 
 .carte__main {
-	width: 80vw;
-	height: 80vh;
-	margin: 0.1rem auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	width: 80vw;
+	height: 80vh;
+	margin: 0.1rem auto;
 }
 
 .carte {
@@ -260,8 +264,8 @@ body::after {
 	font-family: "Orbitron", sans-serif;
 }
 .carte__paragraphe {
-	margin-top: 0.8rem;
 	font-family: "Exo 2", sans-serif;
+	margin-top: 0.8rem;
 }
 
 /* PAGE DES REVES */
@@ -319,11 +323,11 @@ body::after {
 	font-family: none;
 	text-transform: uppercase;
 	font-weight: 700;
+	text-align: center;
+	letter-spacing: 4px;
 	background-image: linear-gradient(to right, #8d8686, #a18f52);
 	background-clip: text;
 	color: transparent;
-	text-align: center;
-	letter-spacing: 4px;
 	margin-top: 5.5rem;
 	text-shadow: 0 0 10px var(--or-metalique), 0 0 30px var(--or-metalique),
 		0 0 20px var(--or-metalique), 0 0 40px var(--peche-pastel),
@@ -354,13 +358,13 @@ body::after {
 }
 
 .boutons__reve__container {
+	position: relative;
 	width: 25rem;
+	padding: 0.5rem;
 	background-color: burlywood;
 	border-radius: 1rem;
 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 	cursor: pointer;
-	padding: 0.5rem;
-	position: relative;
 	transition: transform 0.3s ease;
 }
 
@@ -381,10 +385,10 @@ body::after {
 .boutons__reve__container__cercle2 {
 	width: 8rem;
 	height: 8rem;
+	margin: 0.5rem auto;
 	border-radius: 50%;
 	background-size: cover;
 	background-position: center;
-	margin: 0.5rem auto;
 	animation: flip 3s;
 }
 
@@ -404,15 +408,15 @@ body::after {
 
 .boutons__reve__container__texte {
 	display: none;
-	background-color: burlywood;
-	padding: 1rem;
-	margin-top: 0.5rem;
 	font-family: "Exo 2", sans-serif;
 	font-size: 13px;
 	font-weight: bold;
 	text-align: center;
 	line-height: 1.4em;
 	letter-spacing: 0.1rem;
+	background-color: burlywood;
+	padding: 1rem;
+	margin-top: 0.5rem;
 }
 
 /* Quand la checkbox est cochée = affichage du texte */
@@ -435,6 +439,11 @@ body::after {
 
 /* carte du fond  */
 .cartes__carte {
+	position: relative;
+	width: 20rem;
+	height: 10rem;
+	margin: 30px auto;
+	padding: 5px;
 	background: linear-gradient(
 		to bottom,
 		var(--mauve-principale),
@@ -443,11 +452,6 @@ body::after {
 	border-radius: 1rem;
 	box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
 	cursor: pointer;
-	margin: 30px auto;
-	padding: 5px;
-	width: 20rem;
-	height: 10rem;
-	position: relative;
 	transition: transform 0.5s;
 	overflow: hidden;
 }
@@ -460,37 +464,36 @@ body::after {
 /* texte de fond de la carte  */
 .cartes__texte {
 	font-size: 1rem;
+	font-family: "Exo 2", sans-serif;
 	font-weight: bold;
-	width: 100%;
 	text-align: center;
+	width: 100%;
 	margin-top: 2.5rem;
 	color: #bdbdbd;
 	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-	font-family: "Exo 2", sans-serif;
 }
 
 /* titre de la carte  */
 .cartes__titre {
 	font-size: 1.8rem;
-	margin: 18px auto;
-	margin-top: 30px;
+	font-family: "Orbitron", sans-serif;
+	margin: 30px auto 18px;
 	text-align: center;
 	letter-spacing: 0.1rem;
 	background-image: linear-gradient(to right, #bf42e1, #e0a0ca);
 	background-clip: text;
 	color: transparent;
-	font-family: "Orbitron", sans-serif;
 }
 
 /* superposition carte  */
 .cartes__overlay {
+	position: absolute;
 	background: rgba(0, 0, 0, 1);
 	padding: 10px;
-	position: absolute;
-	bottom: 9px;
 	width: 20rem;
 	height: 10rem;
 	left: 0;
+	bottom: 9px;
 	transition: transform 0.3s ease;
 	box-sizing: border-box;
 }
@@ -501,7 +504,7 @@ body::after {
 	transform: translateY(-100%);
 }
 
-/* PAGES FAQ */
+/* PAGE FAQ */
 
 .faq__container {
 	display: flex;
@@ -512,9 +515,9 @@ body::after {
 }
 /* titre FAQ */
 .faq__titre {
-	margin-top: 4rem;
 	font-size: var(--taille-titre);
 	font-family: "Orbitron", sans-serif;
+	margin-top: 4rem;
 	letter-spacing: 0.2rem;
 	color: var(--mauve-tertiaire);
 	text-shadow: 0 0 10px var(--mauve-secondaire),
@@ -559,8 +562,8 @@ body::after {
 	display: flex;
 	align-items: center;
 	font-size: var(--taille-sous-titre);
-	text-align: center;
 	font-family: "Exo 2", sans-serif;
+	text-align: center;
 	color: #fff;
 	cursor: pointer;
 	margin-top: 1rem;
@@ -581,10 +584,10 @@ body::after {
 /* texte des réponses */
 .faq__texte {
 	font-size: 1.1rem;
-	text-align: center;
-	padding: 0.5rem;
 	font-family: "Exo 2", sans-serif;
 	font-weight: bold;
+	text-align: center;
+	padding: 0.5rem;
 	margin: 1rem auto;
 }
 
@@ -596,7 +599,7 @@ body::after {
 	max-height: 200px;
 }
 
-/* PAGES CONTACT */
+/* PAGE CONTACT */
 .contact-link-container {
 	background: transparent;
 	padding: 20px;
@@ -625,7 +628,7 @@ body::after {
 		0 0 40px var(--mauve-principale);
 }
 
-/* MEDIA */
+/* MEDIA QUERIES */
 
 /* Mobile S */
 @media (max-width: 375px) {
@@ -713,7 +716,7 @@ body::after {
 	font-size: 5rem;
 	}
 
-	.titre__container__sous-titre p{
+	.titre__container__sous-titre {
 		font-size: 2.5rem;
 	}
 
@@ -735,5 +738,4 @@ body::after {
 	.logos__container{
 		gap: 3.5rem;
 	}
-
 }
