@@ -39,7 +39,6 @@ body {
 	background-size: cover;
 	font-family: Arial, Helvetica, sans-serif;
 	overflow: hidden;
-	/* position: relative; */
 	height: 100vh;
 }
 
@@ -71,6 +70,7 @@ body::after {
 	color: var(--gris-argente);
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	gap: 3rem;
 	padding: 1rem;
 	font-size: var(--taille-texte);
@@ -266,6 +266,14 @@ body::after {
 
 /* PAGE DES REVES */
 
+.reves__main{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 80vw;
+	margin: 0.1rem auto;
+}
+/* nuages  */
 .nuages__container__nuage {
 	position: absolute;
 	width: 7rem;
@@ -305,6 +313,7 @@ body::after {
 	left: 60px;
 }
 
+/* Titre */
 .titre__neon__titre {
 	font-size: var(--taille-texte);
 	font-family: none;
@@ -345,13 +354,13 @@ body::after {
 }
 
 .boutons__reve__container {
-	width: 25rem; /* Élargi un peu, en mode FAQ */
+	width: 25rem;
 	background-color: burlywood;
 	border-radius: 1rem;
 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 	cursor: pointer;
 	padding: 0.5rem;
-	position: relative; /* Utile si tu veux peaufiner l'affichage */
+	position: relative;
 	transition: transform 0.3s ease;
 }
 
@@ -389,17 +398,13 @@ body::after {
 	}
 }
 
-/* La checkbox reste planquée */
 .expand-checkbox {
 	display: none;
 }
 
-/* Texte caché par défaut */
 .boutons__reve__container__texte {
 	display: none;
 	background-color: burlywood;
-	/* border-radius: 10px; */
-	/* text-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); */
 	padding: 1rem;
 	margin-top: 0.5rem;
 	font-family: "Exo 2", sans-serif;
@@ -410,7 +415,7 @@ body::after {
 	letter-spacing: 0.1rem;
 }
 
-/* Quand la checkbox est cochée => affichage du texte */
+/* Quand la checkbox est cochée = affichage du texte */
 .expand-checkbox:checked + .expand-button + .boutons__reve__container__texte {
 	display: block;
 }
@@ -621,37 +626,114 @@ body::after {
 }
 
 /* MEDIA */
-/* mobile S */
+
+/* Mobile S */
 @media (max-width: 375px) {
-	/* page qui je suis  */
+	/* PAGE D'ACCUEIL */
+	.boutons__container__bouton{
+		width: 20rem;
+		height: 4.5rem;
+	}
+
+	.logos__container__logo svg {
+		width: 5rem;
+		height: 5rem;
+		margin-top: 2rem;
+	}
+
+	/* PAGE QUI SUIS JE  */
 	.carte__cercle {
 		width: 8.5rem;
 		height: 8.5rem;
 		background-position: -20px 0;
 	}
+
+	/* PAGE MES REVES */
+	.nuages__container__nuage{
+		width: 6rem;
+		height: 2.5rem;
+	}
+
+	.titre__neon__titre{
+		font-size: 2rem;
+	}
+	.boutons__reve__container{
+		width: 20rem;
+	}
+
+	/* PAGES FAQ */
+	.faq__container{
+		gap: 1.8rem;
+	}
+	.faq__item{
+		width: 23rem;
+	}
 }
 
 /* Tablette */
 @media (min-width: 768px) {
+	.navbar{
+	font-size: 2.5rem;
+	}
+	.boutons__reve__container{
+		margin-top: 1.5rem;
+	}
 }
 
-/* laptop 1024px */
+/* Ordinateur 1024px */
 @media (min-width: 1024px) {
-	/* page accueil */
-	* {
-		font-size: 100%;
-	}
 
-	.main {
-		height: 70vh;
-	}
-
-	.boutons__container__bouton {
-		height: 4.5rem;
-	}
-
-	/* page qui je suis */
+	/* PAGE QUI SUIS JE */
 	.carte__main {
 		width: 50vw;
 	}
+}
+
+/* Ordinateur de 1440px */
+@media (min-width: 1440px) {
+}
+
+/* Ecran 4K de 2560px */
+@media (min-width: 2560px) {
+	.navbar{
+	padding: 2rem;
+	gap: 5rem;
+	}
+
+	.navbar__item{
+		font-size: 3rem;
+	}
+
+	.photo-profil__img{
+		width:18rem ;
+		height:18rem;
+	}
+
+	.titre__container__titre-principale{
+	font-size: 5rem;
+	}
+
+	.titre__container__sous-titre p{
+		font-size: 2.5rem;
+	}
+
+	.boutons__container__bouton{
+		width: 43rem;
+		height: 9rem;
+	}
+
+	.boutons__container{
+		font-size: 4rem;
+	}
+
+	.logos__container__logo svg {
+		width: 12rem;
+		height: 12rem;
+		margin-top: 3.5rem;
+	}
+
+	.logos__container{
+		gap: 3.5rem;
+	}
+
 }
