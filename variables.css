@@ -1,0 +1,18 @@
+/* définition des variables */
+:root {
+	/* Couleur */
+	--mauve-principale: #8e2de299;
+	--mauve-secondaire: #4a00e066;
+	--mauve-tertiaire: #c084fc;
+	--cyan-fonce: #2c5364;
+	--gris-argente: #c0c0c0;
+	--gris-bleute: #a5b2c0;
+	--or-metalique: #d4af37;
+	--peche-pastel: #ffb347;
+
+	/* Taille */
+	--taille-titre: 3rem;
+	--taille-sous-titre: 1.3rem;
+	--taille-contenu: 1.8rem;
+	--taille-texte: 2.3rem;
+}
