@@ -38,7 +38,7 @@ a {
 
 /* Fond étoilé */
 body {
-	background: linear-gradient(to bottom, #000428, #004e92); 
+	background: linear-gradient(to bottom, #000428, #004e92);
 	background-size: cover;
 	font-family: Arial, Helvetica, sans-serif;
 	overflow: hidden;
@@ -73,16 +73,27 @@ body::after {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 3rem;
 	padding: 1rem;
-	color: var(--gris-argente);
-	font-size: var(--taille-texte);
+}
+
+.navbar ul {
+	display: flex; 
+	gap: 3rem;
+	list-style: none; 
+	padding: 0;
+	margin: 0;
 }
 
 .navbar__item {
 	cursor: pointer;
 	letter-spacing: 0.2rem;
 	transition: transform 0.3s ease-in-out;
+}
+
+.navbar__item a {
+	color: var(--gris-argente); 
+	text-decoration: none; 
+	font-size: var(--taille-texte);
 }
 
 .navbar__item:hover {
@@ -270,7 +281,7 @@ body::after {
 
 /* PAGE DES REVES */
 
-.reves__main{
+.reves__main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -633,7 +644,7 @@ body::after {
 /* Mobile S */
 @media (max-width: 375px) {
 	/* PAGE D'ACCUEIL */
-	.boutons__container__bouton{
+	.boutons__container__bouton {
 		width: 20rem;
 		height: 4.5rem;
 	}
@@ -652,40 +663,39 @@ body::after {
 	}
 
 	/* PAGE MES REVES */
-	.nuages__container__nuage{
+	.nuages__container__nuage {
 		width: 6rem;
 		height: 2.5rem;
 	}
 
-	.titre__neon__titre{
+	.titre__neon__titre {
 		font-size: 2rem;
 	}
-	.boutons__reve__container{
+	.boutons__reve__container {
 		width: 20rem;
 	}
 
 	/* PAGES FAQ */
-	.faq__container{
+	.faq__container {
 		gap: 1.8rem;
 	}
-	.faq__item{
+	.faq__item {
 		width: 23rem;
 	}
 }
 
 /* Tablette */
 @media (min-width: 768px) {
-	.navbar{
-	font-size: 2.5rem;
+	.navbar {
+		font-size: 2.5rem;
 	}
-	.boutons__reve__container{
+	.boutons__reve__container {
 		margin-top: 1.5rem;
 	}
 }
 
 /* Ordinateur 1024px */
 @media (min-width: 1024px) {
-
 	/* PAGE QUI SUIS JE */
 	.carte__main {
 		width: 50vw;
@@ -698,34 +708,34 @@ body::after {
 
 /* Ecran 4K de 2560px */
 @media (min-width: 2560px) {
-	.navbar{
-	padding: 2rem;
-	gap: 5rem;
+	.navbar {
+		padding: 2rem;
+		gap: 5rem;
 	}
 
-	.navbar__item{
+	.navbar__item {
 		font-size: 3rem;
 	}
 
-	.photo-profil__img{
-		width:18rem ;
-		height:18rem;
+	.photo-profil__img {
+		width: 18rem;
+		height: 18rem;
 	}
 
-	.titre__container__titre-principale{
-	font-size: 5rem;
+	.titre__container__titre-principale {
+		font-size: 5rem;
 	}
 
 	.titre__container__sous-titre {
 		font-size: 2.5rem;
 	}
 
-	.boutons__container__bouton{
+	.boutons__container__bouton {
 		width: 43rem;
 		height: 9rem;
 	}
 
-	.boutons__container{
+	.boutons__container {
 		font-size: 4rem;
 	}
 
@@ -735,7 +745,7 @@ body::after {
 		margin-top: 3.5rem;
 	}
 
-	.logos__container{
+	.logos__container {
 		gap: 3.5rem;
 	}
 }
