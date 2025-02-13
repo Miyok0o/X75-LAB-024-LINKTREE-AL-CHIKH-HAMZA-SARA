@@ -622,37 +622,7 @@ body::after {
 }
 
 /* MEDIA QUERIES */
-
-/* Mobile S */
-@media (max-width: 375px) {
-	/* PAGE D'ACCUEIL */
-	.boutons__container__bouton {
-		width: 20rem;
-		height: 4.5rem;
-	}
-
-	.logos__container__logo svg {
-		width: 5rem;
-		height: 5rem;
-		margin-top: 2rem;
-	}
-
-	/* PAGE QUI SUIS JE  */
-	.carte__cercle {
-		width: 8.5rem;
-		height: 8.5rem;
-		background-position: -20px 0;
-	}
-
 	/* PAGE MES REVES */
-	.nuages__container__nuage {
-		width: 6rem;
-		height: 2.5rem;
-	}
-
-	.titre__neon__titre {
-		font-size: 2rem;
-	}
 	.boutons__reve__container {
 		width: 20rem;
 	}
@@ -664,17 +634,6 @@ body::after {
 	.faq__item {
 		width: 23rem;
 	}
-}
-
-/* Tablette */
-@media (min-width: 768px) {
-	.navbar {
-		font-size: 2.5rem;
-	}
-	.boutons__reve__container {
-		margin-top: 1.5rem;
-	}
-}
 
 /* Ordinateur 1024px */
 @media (min-width: 1024px) {
@@ -684,50 +643,3 @@ body::after {
 	}
 }
 
-/* Ordinateur de 1440px */
-@media (min-width: 1440px) {
-}
-
-/* Ecran 4K de 2560px */
-@media (min-width: 2560px) {
-	.navbar {
-		padding: 2rem;
-		gap: 5rem;
-	}
-
-	.navbar__item {
-		font-size: 3rem;
-	}
-
-	.photo-profil__img {
-		width: 18rem;
-		height: 18rem;
-	}
-
-	.titre__container__titre-principale {
-		font-size: 5rem;
-	}
-
-	.titre__container__sous-titre {
-		font-size: 2.5rem;
-	}
-
-	.boutons__container__bouton {
-		width: 43rem;
-		height: 9rem;
-	}
-
-	.boutons__container {
-		font-size: 4rem;
-	}
-
-	.logos__container__logo svg {
-		width: 12rem;
-		height: 12rem;
-		margin-top: 3.5rem;
-	}
-
-	.logos__container {
-		gap: 3.5rem;
-	}
-}
